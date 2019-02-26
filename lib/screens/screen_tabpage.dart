@@ -67,34 +67,37 @@ class TabPageState extends State<TabPage> with SingleTickerProviderStateMixin {
                 flexibleSpace: FlexibleSpaceBar(
                   collapseMode: CollapseMode.pin,
                   centerTitle: true,
-                  background: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Container(
-                          margin: EdgeInsets.only(top: 16.0),
-                          padding: EdgeInsets.only(left: 32.0, right: 32.0),
-                          child: Text(
-                            'Some text',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontFamily: 'PlayfairDisplay',
-                                fontStyle: FontStyle.italic,
-                                fontSize: 16.0),
-                          )),
-                      Container(
-                          margin: EdgeInsets.only(top: 16.0),
-                          padding: EdgeInsets.only(left: 32.0, right: 32.0),
-                          child: Text(
-                            'some text',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontFamily: 'PlayfairDisplay',
-                                fontSize: 16.0),
-                          )),
-                    ],
+                  background: Container(
+                    decoration: new BoxDecoration(color: Colors.red),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Container(
+                            margin: EdgeInsets.only(top: 16.0),
+                            padding: EdgeInsets.only(left: 32.0, right: 32.0),
+                            child: Text(
+                              'Some text',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'PlayfairDisplay',
+                                  fontStyle: FontStyle.italic,
+                                  fontSize: 16.0),
+                            )),
+                        Container(
+                            margin: EdgeInsets.only(top: 16.0),
+                            padding: EdgeInsets.only(left: 32.0, right: 32.0),
+                            child: Text(
+                              'some text',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'PlayfairDisplay',
+                                  fontSize: 16.0),
+                            )),
+                      ],
+                    ),
                   ),
                 ),
                 bottom: TabBar(
