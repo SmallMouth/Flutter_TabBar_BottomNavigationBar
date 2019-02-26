@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bar/screens/screen_listpage.dart';
+import 'package:flutter_bar/widgets/widget_image_carousel.dart';
 
 class TabPage extends StatefulWidget {
   final String contant;
@@ -69,35 +70,7 @@ class TabPageState extends State<TabPage> with SingleTickerProviderStateMixin {
                   centerTitle: true,
                   background: Container(
                     decoration: new BoxDecoration(color: Colors.red),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        Container(
-                            margin: EdgeInsets.only(top: 16.0),
-                            padding: EdgeInsets.only(left: 32.0, right: 32.0),
-                            child: Text(
-                              'Some text',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: 'PlayfairDisplay',
-                                  fontStyle: FontStyle.italic,
-                                  fontSize: 16.0),
-                            )),
-                        Container(
-                            margin: EdgeInsets.only(top: 16.0),
-                            padding: EdgeInsets.only(left: 32.0, right: 32.0),
-                            child: Text(
-                              'some text',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: 'PlayfairDisplay',
-                                  fontSize: 16.0),
-                            )),
-                      ],
-                    ),
+                    child: ImageCarousel(),
                   ),
                 ),
                 bottom: TabBar(
